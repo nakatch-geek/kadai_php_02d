@@ -1,0 +1,81 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", Meiryo, sans-serif;
+    background-color: #fefcf5;
+    color: #333;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+header h1 { color: #d81b60; margin: 0; }
+.header-actions { margin-top: 15px; }
+.button-register {
+    display: inline-block;
+    background-color: #d81b60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+main { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+.gallery h2 { text-align: center; margin-bottom: 20px; }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-content { padding: 15px; flex-grow: 1; }
+.card-content h3 { margin: 0 0 5px 0; color: #c2185b; }
+.card-content .language { font-weight: bold; color: #555; font-size: 0.9em; }
+.card-content .impression { font-style: italic; color: #666; margin: 10px 0; }
+.card-content .sentence { font-weight: bold; margin: 10px 0; }
+.card-content .titles { font-size: 0.9em; margin: 10px 0; }
+.card-content .titles ul { padding-left: 20px; margin: 5px 0 0 0; }
+.card-content .hashtags { color: #0288d1; font-size: 0.9em; word-break: break-all; }
+.card-content .date { font-size: 0.8em; color: #999; text-align: right; margin-top: 15px; }
+
+/* 登録ページ用のスタイル */
+.register-background {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.register-container h2 { color: #d81b60; }
+.register-container input[type="file"] { display: block; margin: 20px auto; }
+.register-container button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.register-container .back-link { margin-top: 20px; }
+.register-container .back-link a { color: #555; text-decoration: none; }
